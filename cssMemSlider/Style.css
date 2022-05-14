@@ -1,39 +1,90 @@
-body {
-    margin: 0;
-    background: url ("../img/pattern.png"); 
-    font-family: Tahoma;
-    line-height: 1.5;
-    font-size: 18px;}
-.card {
-    width: 400px;
-    margin: 30px auto;
-    background-color: #fff;
-    box-shadow: 0 5px 10px #ccc;
-    border-radius: 10px;
-    padding: 20px;
-   }
-.card-photo {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-    }
-.card-title {
-    font-size: 20px;
-    text-align: center;
-    color: #7f9f1f;}
-.card-text {
-    font-size: 14px;}
-.card-subtitle {
-    font-size: 18px;
-    color: #34b194c2;}
-.card-list {
-    padding-left: 0;
-    list-style-position: inside;
-    font-size: 14px;
-}
-    
 
+body {
+	height: 800px;
+	width: 1280px;
+	margin:auto;
+    padding: 20px;
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
     
-   
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background: #120103;
+}
+
+.footer {
+	background: #3e474f;
+	box-shadow: 0 .5em 1em #111;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+}
+
+header label {
+	color: #788818;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0 1em;
+}
+
+header label:hover {
+	background: #2e353b;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: left 0s .75s;
+}
+
+.slide-one {
+	background-image: url(./img/pic1.jpg);
+}
+
+.slide-two {
+	background-image: url(./img/pic2.jpg);
+}
+.slide-three {
+	background-image: url(./img/pic3.jpg);
+}
+.slide-four {
+	background-image: url(./img/pic4.jpg);
+}
+
+.slide h1 {
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform .5s .5s, opacity .5s;
+}
+
+[id^='slide']:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+[id^='slide']:checked + .slide h1 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s .5s;
+}
+
+
