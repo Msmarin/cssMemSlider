@@ -22,7 +22,7 @@
  h3{
     font: 1.6em sans-serif;
     color: rgb(99, 150, 237);
-    margin-top: 30px;
+    margin-top: 40px;
  }
  
  #overflow{
@@ -41,8 +41,9 @@
  }
  label{
      cursor: pointer;
- }
- 
+  }
+
+
  .container input{
      display: none;
  }
@@ -80,17 +81,18 @@
     margin-left: 76%;
  }
  
- #active label:hover{
-     border-color: #777 !important;
- }
  
+ #active label:hover{
+    
+    background: rgb(210, 240, 248);
+}
  #switch1:checked ~ #active label:nth-child(1),
  #switch2:checked ~ #active label:nth-child(2),
  #switch3:checked ~ #active label:nth-child(3),
  #switch4:checked ~ #active label:nth-child(4),
  #switch5:checked ~ #active label:nth-child(5){
      background: #18a3dd;
-     border-color: #18a3dd !important;
+     /* border-color: #d2e4ec; */
  }
  
  #slides .items, .text {
