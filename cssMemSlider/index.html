@@ -9,36 +9,49 @@
 </head>
 
 <body>
-    <div class="wrap">
+   
+    <div class="container">
+        <input checked="" type="radio" name="respond" id="desktop">
+        <article id="slider">
+            <input checked="" type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <input type="radio" name="slider" id="switch5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="items">
+                        <article><img src="./img/pic1.jpg">
+                            <h3>Девушка программист!?!?</h3>
+                        </article>
+                        
+                        <article><img src="./img/pic2.jpg">
+                            <h3>Программирование...</h3>
+                        </article>
+                        <article><img src="./img/pic3.jpg">
+                            <h3>Очень весело!!!</h3>
+                        </article>
+                        <article><img src="./img/pic4.jpg">
+                            <h3>Ты можешь все!!!</h3>
+                        </article>
+                        <article><img src="./img/pic5.jpg">
+                            <h3>Мда, не работает...</h3>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>
 
-        <input id="slide-1" type="radio" name="slides" checked>
-        <section class="slide slide-one">
-            <h1>Заголовок Один</h1>
-        </section>
-
-        <input id="slide-2" type="radio" name="slides">
-        <section class="slide slide-two">
-            <h1>Заголовок Два</h1>
-        </section>
-
-        <input id="slide-3" type="radio" name="slides">
-        <section class="slide slide-three">
-            <h1>Заголовок Три</h1>
-        </section>
-
-        <input id="slide-4" type="radio" name="slides">
-        <section class="slide slide-four">
-            <h1>Заголовок Четыре</h1>
-        </section>
-
+            <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+        </article>
     </div>
 
-    <footer class="navigation">
-        <label id="btn1" for="slide-1">Первый слайд</label>
-        <label id="btn2" for="slide-2">Второй слайд</label>
-        <label id="btn3" for="slide-3">Третий слайд</label>
-        <label id="btn4" for="slide-4">Четвертый слайд</label>
-    </footer>
 </body>
 
 </html>
