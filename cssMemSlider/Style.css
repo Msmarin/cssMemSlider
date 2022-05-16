@@ -1,39 +1,40 @@
+
 #slider {
     position: relative;
-     top: 10px;
+    top: 15px;
     background-color: hwb(269 4% 64%);
+    border-radius: 10px;
  }
  
  #slider{
-     margin: 0 auto;
+    margin: 0 auto;
     padding: 15px 0px 55px 60px;
  }
  
  #slides article{
-     width: 20%;
+    width: 20%;
     float: left;
  }
  
- #slides .items, .text{
+ #slides .items {
      width: 500%;
      line-height: 0;
  }
  
  h3{
-    font: 1.6em sans-serif;
+    font: 1.4em sans-serif;
     color: rgb(99, 150, 237);
     margin-top: 40px;
  }
  
- #overflow{
+ #slicer{
      width: 100%;
      overflow: hidden;
- }
+}
  
  article img{
- 
     width: 90%;
-    border-radius: 10px;
+    border-radius: 15px;
  }
  
  #desktop:checked ~ #slider{
@@ -84,14 +85,14 @@
  
  #active label:hover{
     
-    background: rgb(210, 240, 248);
+    background: rgb(104, 212, 242);
 }
  #switch1:checked ~ #active label:nth-child(1),
  #switch2:checked ~ #active label:nth-child(2),
  #switch3:checked ~ #active label:nth-child(3),
  #switch4:checked ~ #active label:nth-child(4),
  #switch5:checked ~ #active label:nth-child(5){
-     background: #18a3dd;
+     background: #08587a;
      /* border-color: #d2e4ec; */
  }
  
@@ -100,17 +101,13 @@
  }
  
  
- @media screen and (max-width:700px){
- 
- 
-    h3{
-    font: 1em sans-serif;
-    color: bisque;
+ @media screen and (max-width:768px){
+h3{
     margin-top: 60px;
  }
  
  #active{
-    margin-top: -70px ;
+    margin-top: -82px ;
     margin-left: 40%;
  }
  
